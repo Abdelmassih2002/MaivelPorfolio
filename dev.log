@@ -1,0 +1,13 @@
+
+> my-portfolio@1.0.0 dev
+> next dev
+
+▲ Next.js 16.4.0 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://26.21.167.124:3000
+✓ Ready in 2.0s
+✓ Running next.config took 22ms
+
+○ Compiling / ...
+ GET / 200 in 1165ms (next.js: 703ms, application-code: 462ms)
+ GET / 200 in 468ms (next.js: 9ms, application-code: 459ms)

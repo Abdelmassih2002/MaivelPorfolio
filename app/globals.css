@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  /* Warm, luxury interior-design palette */
+  --color-cream: #faf7f2;
+  --color-shell: #f3ece3;
+  --color-sand-50: #fdfbf7;
+  --color-sand-100: #f5ebe0;
+  --color-sand-200: #e9dccb;
+  --color-sand-300: #d9c6ae;
+  --color-sand-400: #c1a888;
+  --color-clay-500: #a9805c;
+  --color-clay-600: #8f6845;
+  --color-ink-700: #4a4038;
+  --color-ink-800: #332c25;
+  --color-ink-900: #231e19;
+  --color-muted: #8c7a6b;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+
+  --animate-marquee: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-ink-800);
+  }
+  ::selection {
+    background-color: var(--color-sand-300);
+    color: var(--color-ink-900);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .font-display {
+    font-family: var(--font-serif);
+  }
+}
